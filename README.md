@@ -15,7 +15,7 @@ The speech emotion and multi-agent search projects were group work; each reposit
 
 - [Speech Emotion Recognition](https://github.com/Arshiask07/Speech-Emotion-Detection): will a model trained on one set of recordings still work on recordings from a different source? 57.0% accuracy across six emotions on unseen speakers. Trained on RAVDESS alone, it fell to about 17% on CREMA-D, close to chance.
 - [Cost-Aware Multi-Agent Search](https://github.com/Arshiask07/Cost-Aware-MARL-Search-Rescue): how much should a search team spend on sharing information when every message drains a battery? A simulation study. The first version showed no learning because its policies were reset every episode; after the rebuild, reward rose from about -190 to about -60/-70 over 150 episodes.
-- [Temporal Gap Detection](https://github.com/Arshiask07/temporal-gap-detection): can research areas that are about to grow be spotted early? Ranks topics by how concepts connect and what the papers say, then checks the predictions against later publications. Re-ranks them by how often each concept appears over time. Citation counts are being added next. In progress.
+- [Temporal Gap Detection](https://github.com/Arshiask07/temporal-gap-detection): can research areas that are about to grow be spotted early? Ranks topics by how concepts connect and what the papers say, then checks the predictions against later publications. Genuine citation-based ranking is a planned next step, pending API access. In progress.
 
 Also: [Chronic Kidney Disease Early Prediction](https://github.com/Arshiask07/Early-Prediction-for-Chronic-Kidney-Disease-Detection), a group project (forked from a teammate's repository) comparing classifiers on routine lab values.
 
@@ -25,5 +25,5 @@ Python, PyTorch, scikit-learn.
 
 ## Now
 
-Temporal-gap-detection: the graph and the scoring that uses it are done, along with a first re-ranking step. We are working on adding citation counts as a further signal.
+Temporal-gap-detection's graph, ranking, and a mention-based re-ranking step are built. Citation-based velocity, a more precise version of that signal, is a future step, pending institutional API access we don't currently have.
 
